@@ -447,6 +447,9 @@
 		margin-right: 0;
 		color: #8A63D8;
 	}
+	.item-catalog__line:hover .ratings-stars {
+		color: #fff;
+	}
 	.views-person img {
 		margin-right: 8px;
 	}
