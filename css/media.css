@@ -487,6 +487,12 @@
 	.head-sorting_catalog .jqselect:first-child {
 		max-width: 100% !important;
 	}
+	.item-catalog__image {
+    height: 350px;
+}
+}
+@media only screen and (max-width : 480px) {
+
 }
 @media only screen and (max-width : 370px) {
 	.logo {
@@ -495,11 +501,12 @@
 	.item-site__name {
 		font-size: 16px;
 	}
+	.item-catalog__image {
+    height: 295px;
+}
 }
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
 
-}
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
