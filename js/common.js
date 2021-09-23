@@ -23,7 +23,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$(".btn-header").click(function(e) {
 		e.preventDefault();
 		$(this).toggleClass("active");
-	});
+	}); 
 
 	$(".btn-header_search").click(function() {
 		$(".menu-mobile").slideUp(200);
@@ -54,10 +54,29 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	});
 
 	//слайдер
-	$('.slider').slick({
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1
+	$('.slider-card').slick({
+		arrows: true,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        touchThreshold: 1000,
+        prevArrow: '<div class="slick-prev slick-arrow"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" transform="matrix(-1 0 0 1 24.5 0)" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 2C6.986 2 2.5 6.486 2.5 12C2.5 17.514 6.986 22 12.5 22C18.014 22 22.5 17.514 22.5 12C22.5 6.486 18.014 2 12.5 2ZM12.5 3.5C17.187 3.5 21 7.313 21 12C21 16.687 17.187 20.5 12.5 20.5C7.813 20.5 4 16.687 4 12C4 7.313 7.813 3.5 12.5 3.5ZM13.4124 7.9977L9.9264 11.4687C9.7854 11.6097 9.7064 11.8007 9.7064 11.9997C9.7064 12.1997 9.7854 12.3907 9.9264 12.5317L13.4124 16.0017C13.5584 16.1477 13.7504 16.2207 13.9414 16.2207C14.1334 16.2207 14.3264 16.1477 14.4724 15.9997C14.7644 15.7057 14.7634 15.2317 14.4704 14.9397L11.5184 11.9997L14.4704 9.0607C14.7634 8.7687 14.7644 8.2937 14.4724 7.9997C14.1804 7.7047 13.7064 7.7067 13.4124 7.9977Z" fill="#C0A3FA"/></svg><div/>',
+        nextArrow: '<div class="slick-next slick-arrow"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" width="24" height="24" rx="12" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 2C18.014 2 22.5 6.486 22.5 12C22.5 17.514 18.014 22 12.5 22C6.986 22 2.5 17.514 2.5 12C2.5 6.486 6.986 2 12.5 2ZM12.5 3.5C7.813 3.5 4 7.313 4 12C4 16.687 7.813 20.5 12.5 20.5C17.187 20.5 21 16.687 21 12C21 7.313 17.187 3.5 12.5 3.5ZM11.5876 7.9977L15.0736 11.4687C15.2146 11.6097 15.2936 11.8007 15.2936 11.9997C15.2936 12.1997 15.2146 12.3907 15.0736 12.5317L11.5876 16.0017C11.4416 16.1477 11.2496 16.2207 11.0586 16.2207C10.8666 16.2207 10.6736 16.1477 10.5276 15.9997C10.2356 15.7057 10.2366 15.2317 10.5296 14.9397L13.4816 11.9997L10.5296 9.0607C10.2366 8.7687 10.2356 8.2937 10.5276 7.9997C10.8196 7.7047 11.2936 7.7067 11.5876 7.9977Z" fill="#FD3E6C"/></svg><div/>',
+        infinite: true,
+        responsive: [
+		{
+			breakpoint: 590,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 400,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+		]
 	});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");

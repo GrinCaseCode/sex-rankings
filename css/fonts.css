@@ -72,6 +72,15 @@
 	font-style: normal;
 }
 @font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.eot');
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Bold.woff') format('woff'),
+    url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
 	font-family: 'Nunito';
 	src: url('../fonts/Nunito-Regular.eot');
 	src: url('../fonts/Nunito-Regular.eot?#iefix') format('embedded-opentype'),
