@@ -22,7 +22,7 @@ body textarea:focus:required:invalid {
 body input:required:valid, 
 body textarea:required:valid {
 	
-}
+} 
 body {
 	font-family: 'Open Sans';
 	font-size: 14px;
@@ -1422,12 +1422,19 @@ line-height: 20px;
 border: 1px solid #E1DFE7;
 	color: #151313;
 font-family: 'Open Sans';
+transition: all 0.3s;
 border-radius: 20px;
 }
 .item-form textarea {
 	padding-top: 15px;
 	height: 88px;
 	resize: none;
+}
+.item-form input:focus,
+.item-form textarea:focus,
+.item-form input:hover, 
+.item-form textarea:hover {
+	border-color: #C0A3FA;
 }
 .item-form {
 	margin-bottom: 20px;	
@@ -1482,4 +1489,59 @@ border-radius: 30px;
 }
 .modal-wrap .btn-main {
 	padding: 0 21px;
+}
+.item-catalog_site .item-catalog__image img,
+.card-block_site .card-block__image img {
+		width: initial;
+	height: auto;
+	object-fit: initial;
+	font-family: sans-serif;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	max-height: 100%;
+	max-width: 100%;
+}
+.card-block_site .card-block__image {
+	height: 278px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card-block_site .item-catalog__line > * {
+    margin-right: 17px;
+    }
+.advantages-card {
+	padding-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card-advantage {
+	width: 20%;
+	margin-top: 30px;
+	text-align: center;
+	font-family: 'Nunito';
+	font-weight: 700;
+}
+.card-advantage__icon {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card-advantage__icon img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.item-catalog_site .item-catalog__image {
+	height: 159px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+}
+.card-block_site {
+	margin-bottom: 50px;
 }

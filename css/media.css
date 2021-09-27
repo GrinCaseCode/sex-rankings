@@ -1,4 +1,28 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1860px) {
+	.card-block_site .item-catalog__line > * {
+    margin-right: 6px;
+    font-size: 13px;
+}
+.menu {
+    margin: 0 15px;
+    }
+    .logo {
+    margin-right: 15px;
+}
+.dropdown-language {
+    margin-left: 17px;
+    }
+    .logo img {
+    width: 165px;
+}
+.form-search {
+    width: 250px;
+    }
+    .header__wrap {
+    padding: 15px 18px;
+}
+	}
 @media only screen and (max-width : 1700px) {
 	.container {
 		padding: 0 25px;
@@ -26,7 +50,7 @@
 	.header__wrap {
 		padding: 12px 15px;
 	}
-	.item-site__info {
+	.item-site__info { 
 		padding-left: 14px;
 		width: 206px; 
 	}
@@ -103,6 +127,10 @@
 .item-feature span {
     font-size: 11px;
     }
+    .card-block_site .item-catalog__line > * {
+    margin-right: 5px;
+    font-size: 12px;
+}
 }
 @media only screen and (max-width : 1450px) {
 	.menu a img {
@@ -178,6 +206,9 @@
     padding: 37px 40px;
     padding-left: 114px;
     }
+    .rating-person span:not(.rating-person__value) {
+    	display: none;
+    }
 }
 @media only screen and (max-width : 1300px) {
 	.form-search {
@@ -212,6 +243,10 @@
 	.card-block {
     padding: 22px;
     padding-top: 15px;
+}
+.item-catalog_site .item-catalog__content {
+    padding: 16px 10px;
+    padding-bottom: 15px;
 }
 }
 /* Large Devices, Wide Screens */
@@ -415,7 +450,10 @@
 	.sidebar-block_filter {
 		display: none;
 	}
-
+.item-catalog_site .item-catalog__content {
+	    padding: 16px 17px;
+    padding-bottom: 27px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -657,6 +695,42 @@ text-align: left;
 }
 .bottom-mobile-review .btn-main {
 	padding: 0 31px;
+}
+
+.item-catalog_site .rating-person {
+display: flex;
+}
+.item-catalog_site .rating-person span:not(.rating-person__value) {
+display: inline-block;
+}
+.item-catalog_site  .item-catalog__line .ratings-stars {
+	display: none;
+}
+.item-catalog_site .item-catalog__line {
+	justify-content: flex-start;
+}
+.item-catalog_site .item-catalog__line > * {
+margin-right: 20px;
+}
+.card-block {
+	border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.card-advantage {
+	width: 50%;
+	margin-top: 20px;
+}
+.card-block_site .item-catalog__line  {
+	flex-wrap: wrap;
+}
+.card-block_site .rating-person span:not(.rating-person__value) {
+	display: block;
+}
+.advantages-card {
+	padding-bottom: 15px;
+}
+.card-block_site .card-block__image {
+	height: 127px;
 }
 }
 @media only screen and (max-width : 480px) {
