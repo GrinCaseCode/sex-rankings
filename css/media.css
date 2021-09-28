@@ -35,9 +35,9 @@
 	.logo img {
 		width: 145px;
 	}
-	.form-search {
+	.form-search { 
 		width: 236px;
-	}
+	} 
 	.dropdown-language {
 		margin-left: 15px;
 	}
@@ -733,6 +733,8 @@
 		height: 127px;
 	}
 }
+
+
 @media only screen and (max-width : 480px) {
 	.slider-card__item {
 		height: 166px;

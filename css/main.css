@@ -22,12 +22,12 @@ body textarea:focus:required:invalid {
 body input:required:valid, 
 body textarea:required:valid {
 	
-} 
+}  
 body {
 	font-family: 'Open Sans';
-	font-size: 14px;
+	font-size: 14px; 
 	line-height: 20px;
-	overflow-x: hidden;
+	overflow-x: hidden; 
 	color: #151313;
 	margin: 0;
 	background: #FAFAFD;
