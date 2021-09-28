@@ -11,12 +11,12 @@
 	opacity: 1;
 }
 *:-ms-input-placeholder {
-	color: #B8B5BF;
+	color: #B8B5BF; 
 	opacity: 1;
 }
 
 body input:focus:required:invalid,
-body textarea:focus:required:invalid {
+body textarea:focus:required:invalid { 
 	
 }
 body input:required:valid, 
